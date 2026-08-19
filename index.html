@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xolani Lekoma Attorneys — trusted legal counsel in commercial, property, family and litigation law."
+    />
+    <title>Xolani Lekoma Attorneys | Trusted Legal Counsel</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">
+          <span class="brand-mark">XL</span>
+          <span class="brand-text">
+            <strong>Xolani Lekoma</strong>
+            <small>Attorneys</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#practice">Practice Areas</a>
+          <a href="#about">About</a>
+          <a href="#team">Our Team</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Established practice · South Africa</p>
+          <h1>Clear legal counsel for life's most important decisions.</h1>
+          <p class="lede">
+            Xolani Lekoma Attorneys provides principled, results-driven
+            representation in commercial, property, family and litigation
+            matters. We turn complex legal challenges into confident decisions.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a consultation</a>
+            <a href="#practice" class="btn btn-ghost">Explore our services</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>15+</dt><dd>Years of combined experience</dd></div>
+            <div><dt>500+</dt><dd>Matters resolved</dd></div>
+            <div><dt>98%</dt><dd>Client satisfaction</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="practice" class="section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">What we do</p>
+            <h2>Practice areas</h2>
+            <p class="section-sub">
+              Focused expertise across the areas that matter most to
+              individuals and businesses.
+            </p>
+          </header>
+          <div class="cards" id="practice-cards"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Who we are</p>
+            <h2>A modern firm built on old-fashioned trust.</h2>
+            <p>
+              We believe great legal work begins with listening. Our attorneys
+              take the time to understand your goals before recommending a
+              strategy, keeping you informed at every step with plain-language
+              advice.
+            </p>
+            <ul class="checklist">
+              <li>Transparent, fixed-fee options where possible</li>
+              <li>Direct access to the attorney handling your matter</li>
+              <li>Responsive communication within one business day</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Our commitment</h3>
+            <p>
+              Every client receives a dedicated point of contact and a clear
+              roadmap for their matter — no jargon, no surprises.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Our team</p>
+            <h2>Attorneys you can rely on</h2>
+          </header>
+          <div class="cards" id="team-cards"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2>Request a consultation</h2>
+            <p>
+              Tell us a little about your matter and we'll respond within one
+              business day to arrange a confidential consultation.
+            </p>
+            <ul class="contact-details">
+              <li><span>Phone</span> +27 11 000 0000</li>
+              <li><span>Email</span> hello@xolanilekoma.co.za</li>
+              <li><span>Office</span> 12 Fox Street, Johannesburg</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" />
+              <p class="error" data-error-for="name"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+              <p class="error" data-error-for="email"></p>
+            </div>
+            <div class="field">
+              <label for="area">Area of law</label>
+              <select id="area" name="area">
+                <option value="">Select an area</option>
+                <option>Commercial law</option>
+                <option>Property &amp; conveyancing</option>
+                <option>Family law</option>
+                <option>Litigation &amp; disputes</option>
+                <option>Other</option>
+              </select>
+              <p class="error" data-error-for="area"></p>
+            </div>
+            <div class="field">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <p class="error" data-error-for="message"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Send request</button>
+            <p class="form-success" id="form-success" role="status" hidden>
+              Thank you — your request has been received. We'll be in touch
+              within one business day.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Xolani Lekoma Attorneys. All rights reserved.</p>
+        <p class="footer-note">This website is for general information and does not constitute legal advice.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

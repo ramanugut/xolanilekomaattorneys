@@ -1,0 +1,14 @@
+{
+  "name": "xolanilekomaattorneys",
+  "version": "1.0.0",
+  "description": "Marketing website for Xolani Lekoma Attorneys",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
