@@ -1,23 +1,51 @@
 # Xolani Lekoma Attorneys
 
-Professional website for **Xolani Lekoma Attorneys** — a Johannesburg law practice focused on property law, divorce, and deceased estates.
+One-page marketing website for **Xolani Lekoma Attorneys** — a law firm in
+Johannesburg, Gauteng, South Africa (property law, divorce, and deceased
+estates including estate planning).
 
-## Development
+The site is built with **plain HTML, CSS, and JavaScript** — there is no build
+step and no framework. The files can be served as-is by GitHub Pages, cPanel, or
+any static web host.
 
-```bash
-npm install
-npm run dev
+## Project structure
+
+```
+index.html          # The page markup and content
+css/styles.css      # Styles
+js/main.js          # Nav, scroll effects, areas-of-law list, contact form
+favicon.svg         # Site icon
+.nojekyll           # Tell GitHub Pages to serve files as-is
+.github/workflows/  # GitHub Pages deployment workflow
+.cursor/            # Cloud Agent dev environment (static file server)
 ```
 
-## Production build
+All asset paths are **relative**, so the site works both at a GitHub Pages
+project sub-path (`/xolanilekomaattorneys/`) and in any cPanel sub-directory.
+
+## Local development
+
+No dependencies are required. Serve the folder with any static file server:
 
 ```bash
-npm run build
-npm run preview
+python3 -m http.server 8000
+# then open http://localhost:8000/
 ```
 
-## Stack
+(The Cloud Agent environment starts this server automatically in the
+`static-server` terminal.)
 
-- React 19 + TypeScript
-- Vite
-- Static marketing site (contact form opens the visitor’s email client)
+## Deploying
+
+### GitHub Pages (automated)
+
+`.github/workflows/deploy.yml` publishes the site on every push to `main`.
+Enable it once in **Settings → Pages → Build and deployment → Source: GitHub
+Actions**. The site is then served at
+`https://ramanugut.github.io/xolanilekomaattorneys/`.
+
+### cPanel (manual)
+
+Upload the contents of this repository (at minimum `index.html`, `css/`, `js/`,
+and `favicon.svg`) to your `public_html` (or a sub-directory). No build step is
+needed.
