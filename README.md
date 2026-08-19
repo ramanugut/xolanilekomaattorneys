@@ -14,6 +14,7 @@ any static web host.
 index.html          # The page markup and content
 css/styles.css      # Styles
 js/main.js          # Nav, scroll effects, areas-of-law list, contact form
+images/             # Hero and section photography
 favicon.svg         # Site icon
 .nojekyll           # Tell GitHub Pages to serve files as-is
 .github/workflows/  # GitHub Pages deployment workflow
@@ -47,5 +48,5 @@ Actions**. The site is then served at
 ### cPanel (manual)
 
 Upload the contents of this repository (at minimum `index.html`, `css/`, `js/`,
-and `favicon.svg`) to your `public_html` (or a sub-directory). No build step is
-needed.
+`images/`, and `favicon.svg`) to your `public_html` (or a sub-directory). No
+build step is needed.

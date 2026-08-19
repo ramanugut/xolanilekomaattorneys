@@ -64,6 +64,16 @@
 
       <main>
         <section class="hero" aria-labelledby="hero-brand">
+          <div class="hero__media" aria-hidden="true">
+            <img
+              class="hero__image"
+              src="images/hero-johannesburg.jpg"
+              alt=""
+              width="2400"
+              height="1800"
+              fetchpriority="high"
+            />
+          </div>
           <div class="hero__veil" aria-hidden="true"></div>
           <div class="hero__content">
             <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
@@ -96,33 +106,66 @@
             </div>
             <ul class="practice-list">
               <li style="--i: 0">
-                <span class="practice-list__index">01</span>
-                <div>
-                  <h3>Property Law</h3>
-                  <p>
-                    Transfers, conveyancing support, and clear guidance through
-                    residential and commercial property matters.
-                  </p>
+                <figure class="practice-list__media">
+                  <img
+                    src="images/practice-property.jpg"
+                    alt="Modern residential property with a pool and landscaped patio"
+                    width="1600"
+                    height="1061"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="practice-list__copy">
+                  <span class="practice-list__index">01</span>
+                  <div>
+                    <h3>Property Law</h3>
+                    <p>
+                      Transfers, conveyancing support, and clear guidance through
+                      residential and commercial property matters.
+                    </p>
+                  </div>
                 </div>
               </li>
               <li style="--i: 1">
-                <span class="practice-list__index">02</span>
-                <div>
-                  <h3>Divorce &amp; Family</h3>
-                  <p>
-                    Sensitive counsel for divorce proceedings, with practical
-                    advice focused on clarity and lasting outcomes.
-                  </p>
+                <figure class="practice-list__media">
+                  <img
+                    src="images/practice-family.jpg"
+                    alt="Handshake sealing an agreement in a professional meeting"
+                    width="1600"
+                    height="1068"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="practice-list__copy">
+                  <span class="practice-list__index">02</span>
+                  <div>
+                    <h3>Divorce &amp; Family</h3>
+                    <p>
+                      Sensitive counsel for divorce proceedings, with practical
+                      advice focused on clarity and lasting outcomes.
+                    </p>
+                  </div>
                 </div>
               </li>
               <li style="--i: 2">
-                <span class="practice-list__index">03</span>
-                <div>
-                  <h3>Deceased Estates &amp; Estate Planning</h3>
-                  <p>
-                    Administration of deceased estates and estate planning with
-                    careful attention to process, family, and compliance.
-                  </p>
+                <figure class="practice-list__media">
+                  <img
+                    src="images/practice-estate.jpg"
+                    alt="Hands drafting careful notes and documents at a desk"
+                    width="1600"
+                    height="1068"
+                    loading="lazy"
+                  />
+                </figure>
+                <div class="practice-list__copy">
+                  <span class="practice-list__index">03</span>
+                  <div>
+                    <h3>Deceased Estates &amp; Estate Planning</h3>
+                    <p>
+                      Administration of deceased estates and estate planning with
+                      careful attention to process, family, and compliance.
+                    </p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -176,27 +219,38 @@
               </dl>
             </div>
 
-            <aside class="about__panel" aria-labelledby="goodtoknow-heading">
-              <h3 id="goodtoknow-heading">Good to know</h3>
-              <ul class="about__notes">
-                <li>
-                  <span class="about__notes-label">First consultation</span>
-                  The first consultation is not provided free of charge.
-                </li>
-                <li>
-                  <span class="about__notes-label">Contingency fees</span>
-                  Open to contingency fee agreements.
-                </li>
-                <li>
-                  <span class="about__notes-label">Payments</span>
-                  Credit card payments accepted.
-                </li>
-                <li>
-                  <span class="about__notes-label">Districts serviced</span>
-                  Germiston · Johannesburg · Kempton Park · Soweto
-                </li>
-              </ul>
-            </aside>
+            <div class="about__visual">
+              <figure class="about__figure">
+                <img
+                  src="images/about-johannesburg.jpg"
+                  alt="Johannesburg city skyline at dusk"
+                  width="1800"
+                  height="1201"
+                  loading="lazy"
+                />
+              </figure>
+              <aside class="about__panel" aria-labelledby="goodtoknow-heading">
+                <h3 id="goodtoknow-heading">Good to know</h3>
+                <ul class="about__notes">
+                  <li>
+                    <span class="about__notes-label">First consultation</span>
+                    The first consultation is not provided free of charge.
+                  </li>
+                  <li>
+                    <span class="about__notes-label">Contingency fees</span>
+                    Open to contingency fee agreements.
+                  </li>
+                  <li>
+                    <span class="about__notes-label">Payments</span>
+                    Credit card payments accepted.
+                  </li>
+                  <li>
+                    <span class="about__notes-label">Districts serviced</span>
+                    Germiston · Johannesburg · Kempton Park · Soweto
+                  </li>
+                </ul>
+              </aside>
+            </div>
           </div>
         </section>
 
@@ -209,6 +263,15 @@
                 Share a brief outline of your matter. We will respond to arrange a
                 consultation at the Parktown West office or by appointment.
               </p>
+              <figure class="contact__figure">
+                <img
+                  src="images/contact-office.jpg"
+                  alt="Quiet library aisle lined with books and warm hanging lights"
+                  width="1600"
+                  height="1479"
+                  loading="lazy"
+                />
+              </figure>
               <ul class="contact__details">
                 <li>
                   <span>Phone</span>
