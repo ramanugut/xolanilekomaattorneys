@@ -2,23 +2,285 @@
 <html lang="en-ZA">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Xolani Lekoma Attorneys — property law, divorce, and deceased estates in Johannesburg."
+      content="Xolani Lekoma Attorneys — property law, divorce, and deceased estates (including estate planning) in Johannesburg, Gauteng."
     />
     <meta name="theme-color" content="#0f1a14" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Xolani Lekoma Attorneys | Johannesburg</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip-link" href="#practice">Skip to content</a>
+
+    <div class="site" id="top">
+      <header class="site-header" id="site-header">
+        <div class="header-inner">
+          <a class="brand-mark" href="#top">
+            <span class="brand-mark__monogram" aria-hidden="true">XL</span>
+            <span class="brand-mark__text">
+              Xolani Lekoma
+              <span>Attorneys</span>
+            </span>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Primary">
+            <a href="#practice">Practice</a>
+            <a href="#areas">Areas of Law</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-cta" href="#contact">Book a consultation</a>
+          </nav>
+
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span class="sr-only">Open menu</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile">
+          <a href="#practice">Practice</a>
+          <a href="#areas">Areas of Law</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Book a consultation</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-brand">
+          <div class="hero__veil" aria-hidden="true"></div>
+          <div class="hero__content">
+            <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
+            <h1 class="hero__headline">Clear counsel for life&apos;s decisive moments.</h1>
+            <p class="hero__lede">
+              Property law, divorce, and deceased estates — handled with precision
+              in Johannesburg, Gauteng.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Request a consultation</a>
+              <a class="btn btn--ghost" href="#practice">View practice areas</a>
+            </div>
+            <ul class="hero__badges">
+              <li>Contingency fee agreements welcome</li>
+              <li>Credit cards accepted</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="practice" class="section practice reveal" aria-labelledby="practice-heading">
+          <div class="section__inner">
+            <div class="section__intro">
+              <p class="eyebrow">Practice areas</p>
+              <h2 id="practice-heading">Focused expertise where it matters most.</h2>
+              <p class="section__lede">
+                A Johannesburg practice built around the matters families and
+                property owners face most often.
+              </p>
+            </div>
+            <ul class="practice-list">
+              <li style="--i: 0">
+                <span class="practice-list__index">01</span>
+                <div>
+                  <h3>Property Law</h3>
+                  <p>
+                    Transfers, conveyancing support, and clear guidance through
+                    residential and commercial property matters.
+                  </p>
+                </div>
+              </li>
+              <li style="--i: 1">
+                <span class="practice-list__index">02</span>
+                <div>
+                  <h3>Divorce &amp; Family</h3>
+                  <p>
+                    Sensitive counsel for divorce proceedings, with practical
+                    advice focused on clarity and lasting outcomes.
+                  </p>
+                </div>
+              </li>
+              <li style="--i: 2">
+                <span class="practice-list__index">03</span>
+                <div>
+                  <h3>Deceased Estates &amp; Estate Planning</h3>
+                  <p>
+                    Administration of deceased estates and estate planning with
+                    careful attention to process, family, and compliance.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="areas" class="section areas reveal" aria-labelledby="areas-heading">
+          <div class="section__inner">
+            <div class="section__intro">
+              <p class="eyebrow">Areas of law</p>
+              <h2 id="areas-heading">Broad experience across the law.</h2>
+              <p class="section__lede">
+                Beyond our core practice, we advise and represent clients across a
+                wide range of legal matters.
+              </p>
+            </div>
+            <ul class="areas-grid" id="areas-grid"></ul>
+          </div>
+        </section>
+
+        <section id="about" class="section about reveal" aria-labelledby="about-heading">
+          <div class="about__layout section__inner">
+            <div class="about__copy">
+              <p class="eyebrow">About the firm</p>
+              <h2 id="about-heading">Advocate for clarity. Partner in resolution.</h2>
+              <p>
+                Xolani Lekoma Attorneys is a law firm operating in Johannesburg,
+                Gauteng, South Africa. The practice focuses on practical,
+                accessible legal support for property transactions, divorce
+                matters, and the administration of deceased estates, including
+                estate planning.
+              </p>
+              <p>
+                Clients work directly with counsel who values plain language,
+                steady process, and outcomes that respect both the law and the
+                people it serves.
+              </p>
+              <dl class="about__facts">
+                <div>
+                  <dt>Office</dt>
+                  <dd>Johannesburg</dd>
+                </div>
+                <div>
+                  <dt>Languages</dt>
+                  <dd>English</dd>
+                </div>
+                <div>
+                  <dt>Based in</dt>
+                  <dd>Parktown West, Johannesburg</dd>
+                </div>
+              </dl>
+            </div>
+
+            <aside class="about__panel" aria-labelledby="goodtoknow-heading">
+              <h3 id="goodtoknow-heading">Good to know</h3>
+              <ul class="about__notes">
+                <li>
+                  <span class="about__notes-label">First consultation</span>
+                  The first consultation is not provided free of charge.
+                </li>
+                <li>
+                  <span class="about__notes-label">Contingency fees</span>
+                  Open to contingency fee agreements.
+                </li>
+                <li>
+                  <span class="about__notes-label">Payments</span>
+                  Credit card payments accepted.
+                </li>
+                <li>
+                  <span class="about__notes-label">Districts serviced</span>
+                  Germiston · Johannesburg · Kempton Park · Soweto
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact reveal" aria-labelledby="contact-heading">
+          <div class="section__inner contact__layout">
+            <div class="contact__intro">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-heading">Begin with a conversation.</h2>
+              <p class="section__lede">
+                Share a brief outline of your matter. We will respond to arrange a
+                consultation at the Parktown West office or by appointment.
+              </p>
+              <ul class="contact__details">
+                <li>
+                  <span>Phone</span>
+                  <a href="tel:+27767264503">076 726 4503</a>
+                </li>
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:xolanie2@gmail.com">xolanie2@gmail.com</a>
+                </li>
+                <li>
+                  <span>Physical address</span>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&amp;query=2+Gale+Road+Parktown+West+Johannesburg+2193"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    2 Gale Road, Parktown West, Johannesburg, 2193, Gauteng
+                  </a>
+                </li>
+                <li>
+                  <span>Postal address</span>
+                  <span class="contact__plain">Magelevendze House, Johannesburg, 2193</span>
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+                <p class="form-error" data-error-for="name"></p>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                <p class="form-error" data-error-for="email"></p>
+              </div>
+              <div class="form-field">
+                <label for="matter">Area of law</label>
+                <select id="matter" name="matter">
+                  <option value="">Select an area</option>
+                  <option>Property Law</option>
+                  <option>Divorce &amp; Family</option>
+                  <option>Deceased Estates &amp; Estate Planning</option>
+                  <option>Other</option>
+                </select>
+                <p class="form-error" data-error-for="matter"></p>
+              </div>
+              <div class="form-field">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" rows="5" placeholder="A short note about your matter"></textarea>
+                <p class="form-error" data-error-for="message"></p>
+              </div>
+              <button class="btn btn--primary" type="submit">Send enquiry</button>
+              <p class="form-note" id="form-note" role="status" hidden>
+                Opening your email app to complete the message…
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <p class="footer-brand">Xolani Lekoma Attorneys</p>
+          <p class="footer-meta">
+            &copy; <span id="year"></span> · Law firm in Johannesburg, Gauteng, South Africa
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
