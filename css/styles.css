@@ -709,23 +709,12 @@ svg {
   width: min(100%, 22rem);
 }
 
-.about__monogram {
-  display: grid;
-  place-items: center;
+.about__portrait img {
+  width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
   border: 1px solid rgba(196, 165, 116, 0.4);
-  background:
-    radial-gradient(circle at 50% 35%, rgba(196, 165, 116, 0.16), transparent 55%),
-    linear-gradient(165deg, #16251d, #0f1a14 70%);
-}
-
-.about__monogram span {
-  font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 5rem);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--brass);
-  line-height: 1;
 }
 
 .about__portrait figcaption {
