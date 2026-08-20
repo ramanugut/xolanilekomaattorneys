@@ -3,35 +3,35 @@
 
   var AREA_ICONS = {
     '3rd Party Claims':
-      '<path d="M7 12h10M12 7v10" /><circle cx="12" cy="12" r="8.25" />',
+      '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />',
     'Bail Applications':
-      '<rect x="5" y="4" width="14" height="16" rx="1.5" /><path d="M9 9h6M9 13h6M9 17h3" />',
+      '<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><path d="M14 2v6h6M9 13h6M9 17h4" />',
     'Bills of Legal Costs':
-      '<path d="M6 5h9l3 3v11H6V5z" /><path d="M15 5v3h3M9 12h6M9 16h4" />',
+      '<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><path d="M14 2v6h6M8 13h8M8 17h5M12 9h4" />',
     'Child Abuse':
-      '<circle cx="12" cy="9" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.8 6.5-4.8S17.8 15.8 19 19" />',
+      '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><circle cx="12" cy="10" r="3" />',
     'Civil Rights':
-      '<path d="M12 3l8 4v5c0 4.8-3.4 8.2-8 9.7C7.4 20.2 4 16.8 4 12V7l8-4z" />',
+      '<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />',
     'Company Registrations':
-      '<rect x="4" y="8" width="16" height="12" /><path d="M8 8V6h8v2M9 12h2M13 12h2M9 16h2M13 16h2" />',
+      '<rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />',
     Constitutional:
-      '<path d="M4 18V7l8-3 8 3v11" /><path d="M4 18h16M9 18v-5h6v5" />',
+      '<path d="M3 21h18M3 7h18M6 7v14M10 7v14M14 7v14M18 7v14M12 3l9 4H3l9-4z" />',
     'Debtor and Creditor':
-      '<circle cx="12" cy="12" r="8.25" /><path d="M12 7v10M9.5 9.5c.6-1 1.5-1.5 2.5-1.5 1.4 0 2.5.8 2.5 2s-1.1 2-2.5 2h-1c-1.4 0-2.5.8-2.5 2s1.1 2 2.5 2c1 0 1.9-.5 2.5-1.5" />',
+      '<rect x="2" y="4" width="20" height="16" rx="2" /><path d="M6 12h12M12 8v8" />',
     'Drunk Driving':
-      '<circle cx="8" cy="16" r="2.5" /><circle cx="17" cy="16" r="2.5" /><path d="M4 16h1.5M10.5 16H14M19.5 16H21M6 12l2-5h7l3 5" />',
+      '<circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2M8 16h8" />',
     'Immigration / Emigration':
-      '<circle cx="12" cy="12" r="8.25" /><path d="M3.5 12h17M12 3.5a13 13 0 010 17M12 3.5a13 13 0 000 17" />',
+      '<circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />',
     'Labour Law':
-      '<path d="M8 10V7a4 4 0 018 0v3" /><rect x="5" y="10" width="14" height="10" rx="1.5" />',
+      '<rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M12 12v3" />',
     'Litigation (Civil)':
-      '<path d="M12 4v3M8 21h8M10 7h4l3 7H7l3-7zM9 14l-2 7M15 14l2 7" />',
+      '<path d="M3 6l9-4 9 4v2H3V6zM4 21h16M7 8v13M17 8v13M12 8v13" />',
     'Partnership Agreements':
-      '<circle cx="9" cy="10" r="3" /><circle cx="15" cy="10" r="3" /><path d="M4.5 19c1-3 3-4.5 4.5-4.5S12 16 13 19M11 19c1-3 3-4.5 4.5-4.5S19 16 20 19" />',
+      '<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />',
     'Privacy Law':
-      '<rect x="6" y="10" width="12" height="10" rx="1.5" /><path d="M9 10V8a3 3 0 016 0v2" />',
+      '<rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0110 0v4" />',
     'Sale of Business':
-      '<path d="M4 10l8-5 8 5v10H4V10z" /><path d="M11 20v-6h2v6" />'
+      '<path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path d="M9 22V12h6v10" />'
   };
 
   var AREAS_OF_LAW = Object.keys(AREA_ICONS);
@@ -39,16 +39,16 @@
   function renderAreas() {
     var grid = document.getElementById('areas-grid');
     if (!grid) return;
-    var html = AREAS_OF_LAW.map(function (area) {
-      var paths = AREA_ICONS[area] || '';
+    var html = AREAS_OF_LAW.map(function (area, index) {
+      var paths = AREA_ICONS[area] || '<circle cx="12" cy="12" r="8" />';
       return (
-        '<li>' +
+        '<li style="--i: ' + index + '">' +
         '<span class="areas-grid__icon" aria-hidden="true">' +
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' +
         paths +
         '</svg>' +
         '</span>' +
-        '<span>' +
+        '<span class="areas-grid__label">' +
         area +
         '</span>' +
         '</li>'
@@ -66,6 +66,16 @@
     var header = document.getElementById('site-header');
     var toggle = document.getElementById('menu-toggle');
     if (!header) return;
+
+    var onScroll = function () {
+      if (window.scrollY > 20) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 
     if (toggle) {
       toggle.addEventListener('click', function () {
@@ -103,11 +113,90 @@
           }
         });
       },
-      { threshold: 0.14 }
+      { threshold: 0.1 }
     );
 
     Array.prototype.forEach.call(sections, function (section) {
       observer.observe(section);
+    });
+  }
+
+  function initCallbackForm() {
+    var form = document.getElementById('callback-form');
+    var note = document.getElementById('cb-note');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var nameEl = document.getElementById('cb-name');
+      var phoneEl = document.getElementById('cb-phone');
+      var matterEl = document.getElementById('cb-matter');
+
+      var name = nameEl ? nameEl.value.trim() : '';
+      var phone = phoneEl ? phoneEl.value.trim() : '';
+      var matter = matterEl ? matterEl.value : '';
+
+      var valid = true;
+
+      function setFieldErr(fieldId, msg) {
+        var errEl = form.querySelector('[data-error-for="' + fieldId + '"]');
+        var inputEl = document.getElementById(fieldId);
+        if (errEl) errEl.textContent = msg;
+        if (inputEl) {
+          if (msg) inputEl.classList.add('is-invalid');
+          else inputEl.classList.remove('is-invalid');
+        }
+      }
+
+      if (name.length < 2) {
+        setFieldErr('cb-name', 'Please enter your name.');
+        valid = false;
+      } else {
+        setFieldErr('cb-name', '');
+      }
+
+      if (phone.length < 7) {
+        setFieldErr('cb-phone', 'Please enter a valid phone number.');
+        valid = false;
+      } else {
+        setFieldErr('cb-phone', '');
+      }
+
+      if (!matter) {
+        setFieldErr('cb-matter', 'Please choose a matter.');
+        valid = false;
+      } else {
+        setFieldErr('cb-matter', '');
+      }
+
+      if (!valid) return;
+
+      if (note) note.hidden = false;
+
+      var subject = encodeURIComponent('URGENT: Call Back Request from ' + name);
+      var body = encodeURIComponent(
+        'CALL BACK REQUEST\n\n' +
+          'Name: ' + name + '\n' +
+          'Phone: ' + phone + '\n' +
+          'Matter: ' + matter + '\n\n' +
+          'Please call me back at your earliest convenience.'
+      );
+
+      setTimeout(function () {
+        window.location.href =
+          'mailto:xolanie2@gmail.com?subject=' + subject + '&body=' + body;
+      }, 350);
+    });
+
+    ['cb-name', 'cb-phone', 'cb-matter'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', function () {
+          var errEl = form.querySelector('[data-error-for="' + id + '"]');
+          if (errEl) errEl.textContent = '';
+          el.classList.remove('is-invalid');
+        });
+      }
     });
   }
 
@@ -195,6 +284,7 @@
     setYear();
     initHeader();
     initReveal();
+    initCallbackForm();
     initForm();
   }
 
