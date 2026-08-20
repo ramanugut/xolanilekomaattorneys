@@ -14,8 +14,8 @@ any static web host.
 index.html          # The page markup and content
 css/styles.css      # Styles
 js/main.js          # Nav, scroll effects, areas-of-law list, contact form
-images/about-portrait.jpg   # Counsel bust portrait (About section)
-images/hero-banner.jpg      # Law office hero banner (scales & law book)
+images/hero-banner.jpg      # Hero banner (counsel portrait)
+images/about-portrait.jpg   # About section portrait
 favicon.svg         # Site icon
 .nojekyll           # Tell GitHub Pages to serve files as-is
 .github/workflows/  # GitHub Pages deployment workflow
