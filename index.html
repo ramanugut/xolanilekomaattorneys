@@ -37,7 +37,10 @@
             <a href="#areas">Areas of Law</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a class="nav-cta" href="#contact">Book a consultation</a>
+            <a class="nav-cta" href="#contact">
+              Book a consultation
+              <span class="nav-cta__arrow" aria-hidden="true">→</span>
+            </a>
           </nav>
 
           <button
@@ -64,109 +67,118 @@
 
       <main>
         <section class="hero" aria-labelledby="hero-brand">
-          <div class="hero__media" aria-hidden="true">
-            <img
-              class="hero__image"
-              src="images/hero-johannesburg.jpg"
-              alt=""
-              width="2400"
-              height="1800"
-              fetchpriority="high"
-            />
-          </div>
-          <div class="hero__veil" aria-hidden="true"></div>
-          <div class="hero__content">
-            <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
-            <h1 class="hero__headline">Clear counsel for life&apos;s decisive moments.</h1>
-            <p class="hero__lede">
-              Property law, divorce, and deceased estates — handled with precision
-              in Johannesburg, Gauteng.
-            </p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#contact">Request a consultation</a>
-              <a class="btn btn--ghost" href="#practice">View practice areas</a>
+          <div class="hero__grid">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Practical advice. Purposeful outcomes.</p>
+              <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
+              <h1 class="hero__headline">Clear counsel for life&apos;s decisive moments.</h1>
+              <p class="hero__lede">
+                Property law, divorce, and deceased estates — handled with precision
+                in Johannesburg, Gauteng.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#contact">Request consultation</a>
+                <a class="btn btn--ghost" href="#practice">View practice areas</a>
+              </div>
+              <ul class="hero__trust">
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  </span>
+                  Contingency fees welcome
+                </li>
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="2.5" y="5" width="19" height="14" rx="2" />
+                      <path d="M2.5 10h19" />
+                    </svg>
+                  </span>
+                  Credit cards accepted
+                </li>
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+                    </svg>
+                  </span>
+                  English
+                </li>
+              </ul>
             </div>
-            <ul class="hero__badges">
-              <li>Contingency fee agreements welcome</li>
-              <li>Credit cards accepted</li>
-              <li>English</li>
-            </ul>
+
+            <figure class="hero__portrait">
+              <img
+                src="images/hero-portrait.jpg"
+                alt="Professional counsel in a Johannesburg law office"
+                width="1100"
+                height="1467"
+                fetchpriority="high"
+              />
+            </figure>
           </div>
         </section>
 
         <section id="practice" class="section practice reveal" aria-labelledby="practice-heading">
           <div class="section__inner">
-            <div class="section__intro">
-              <p class="eyebrow">Practice areas</p>
+            <div class="section__intro section__intro--center">
+              <p class="eyebrow">Featured practice areas</p>
               <h2 id="practice-heading">Focused expertise where it matters most.</h2>
               <p class="section__lede">
                 A Johannesburg practice built around the matters families and
                 property owners face most often.
               </p>
             </div>
-            <ul class="practice-list">
+            <ul class="practice-grid">
               <li style="--i: 0">
-                <figure class="practice-list__media">
-                  <img
-                    src="images/practice-property.jpg"
-                    alt="Modern residential property with a pool and landscaped patio"
-                    width="1600"
-                    height="1061"
-                    loading="lazy"
-                  />
-                </figure>
-                <div class="practice-list__copy">
-                  <span class="practice-list__index">01</span>
-                  <div>
-                    <h3>Property Law</h3>
-                    <p>
-                      Transfers, conveyancing support, and clear guidance through
-                      residential and commercial property matters.
-                    </p>
-                  </div>
-                </div>
+                <span class="practice-grid__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M4 14l12-8 12 8v12H4V14z" />
+                    <path d="M12 26v-8h8v8" />
+                  </svg>
+                </span>
+                <span class="practice-grid__index">01</span>
+                <h3>Property Law</h3>
+                <p>
+                  Transfers, conveyancing support, and clear guidance through
+                  residential and commercial property matters.
+                </p>
+                <a class="text-link" href="#contact">Learn more <span aria-hidden="true">→</span></a>
               </li>
               <li style="--i: 1">
-                <figure class="practice-list__media">
-                  <img
-                    src="images/practice-family.jpg"
-                    alt="Handshake sealing an agreement in a professional meeting"
-                    width="1600"
-                    height="1068"
-                    loading="lazy"
-                  />
-                </figure>
-                <div class="practice-list__copy">
-                  <span class="practice-list__index">02</span>
-                  <div>
-                    <h3>Divorce &amp; Family</h3>
-                    <p>
-                      Sensitive counsel for divorce proceedings, with practical
-                      advice focused on clarity and lasting outcomes.
-                    </p>
-                  </div>
-                </div>
+                <span class="practice-grid__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <circle cx="11" cy="11" r="4" />
+                    <circle cx="21" cy="11" r="4" />
+                    <path d="M4 26c1.5-4 4.5-6 7-6s5.5 2 7 6M14 26c1.5-4 4.5-6 7-6s5.5 2 7 6" />
+                  </svg>
+                </span>
+                <span class="practice-grid__index">02</span>
+                <h3>Divorce &amp; Family</h3>
+                <p>
+                  Sensitive counsel for divorce proceedings, with practical
+                  advice focused on clarity and lasting outcomes.
+                </p>
+                <a class="text-link" href="#contact">Learn more <span aria-hidden="true">→</span></a>
               </li>
               <li style="--i: 2">
-                <figure class="practice-list__media">
-                  <img
-                    src="images/practice-estate.jpg"
-                    alt="Hands drafting careful notes and documents at a desk"
-                    width="1600"
-                    height="1068"
-                    loading="lazy"
-                  />
-                </figure>
-                <div class="practice-list__copy">
-                  <span class="practice-list__index">03</span>
-                  <div>
-                    <h3>Deceased Estates &amp; Estate Planning</h3>
-                    <p>
-                      Administration of deceased estates and estate planning with
-                      careful attention to process, family, and compliance.
-                    </p>
-                  </div>
-                </div>
+                <span class="practice-grid__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M8 6h12l4 4v16H8V6z" />
+                    <path d="M20 6v4h4M12 14h8M12 18h8M12 22h5" />
+                  </svg>
+                </span>
+                <span class="practice-grid__index">03</span>
+                <h3>Deceased Estates &amp; Estate Planning</h3>
+                <p>
+                  Administration of deceased estates and estate planning with
+                  careful attention to process, family, and compliance.
+                </p>
+                <a class="text-link" href="#contact">Learn more <span aria-hidden="true">→</span></a>
               </li>
             </ul>
           </div>
@@ -174,7 +186,7 @@
 
         <section id="areas" class="section areas reveal" aria-labelledby="areas-heading">
           <div class="section__inner">
-            <div class="section__intro">
+            <div class="section__intro section__intro--center">
               <p class="eyebrow">Areas of law</p>
               <h2 id="areas-heading">Broad experience across the law.</h2>
               <p class="section__lede">
@@ -203,54 +215,74 @@
                 steady process, and outcomes that respect both the law and the
                 people it serves.
               </p>
-              <dl class="about__facts">
-                <div>
-                  <dt>Office</dt>
-                  <dd>Johannesburg</dd>
-                </div>
-                <div>
-                  <dt>Languages</dt>
-                  <dd>English</dd>
-                </div>
-                <div>
-                  <dt>Based in</dt>
-                  <dd>Parktown West, Johannesburg</dd>
-                </div>
-              </dl>
             </div>
 
-            <div class="about__visual">
-              <figure class="about__figure">
-                <img
-                  src="images/about-johannesburg.jpg"
-                  alt="Johannesburg city skyline at dusk"
-                  width="1800"
-                  height="1201"
-                  loading="lazy"
-                />
-              </figure>
-              <aside class="about__panel" aria-labelledby="goodtoknow-heading">
-                <h3 id="goodtoknow-heading">Good to know</h3>
-                <ul class="about__notes">
-                  <li>
+            <figure class="about__portrait">
+              <img
+                src="images/about-portrait.jpg"
+                alt=""
+                width="720"
+                height="900"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Xolani Lekoma</strong>
+                <span>Attorney · Johannesburg</span>
+              </figcaption>
+            </figure>
+
+            <aside class="about__panel" aria-labelledby="goodtoknow-heading">
+              <h3 id="goodtoknow-heading">Good to know</h3>
+              <ul class="about__notes">
+                <li>
+                  <span class="about__notes-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 8v4l3 2" />
+                    </svg>
+                  </span>
+                  <div>
                     <span class="about__notes-label">First consultation</span>
                     The first consultation is not provided free of charge.
-                  </li>
-                  <li>
+                  </div>
+                </li>
+                <li>
+                  <span class="about__notes-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z" />
+                    </svg>
+                  </span>
+                  <div>
                     <span class="about__notes-label">Contingency fees</span>
                     Open to contingency fee agreements.
-                  </li>
-                  <li>
+                  </div>
+                </li>
+                <li>
+                  <span class="about__notes-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="2.5" y="5" width="19" height="14" rx="2" />
+                      <path d="M2.5 10h19" />
+                    </svg>
+                  </span>
+                  <div>
                     <span class="about__notes-label">Payments</span>
                     Credit card payments accepted.
-                  </li>
-                  <li>
+                  </div>
+                </li>
+                <li>
+                  <span class="about__notes-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" />
+                      <circle cx="12" cy="10" r="2.5" />
+                    </svg>
+                  </span>
+                  <div>
                     <span class="about__notes-label">Districts serviced</span>
                     Germiston · Johannesburg · Kempton Park · Soweto
-                  </li>
-                </ul>
-              </aside>
-            </div>
+                  </div>
+                </li>
+              </ul>
+            </aside>
           </div>
         </section>
 
@@ -258,44 +290,87 @@
           <div class="section__inner contact__layout">
             <div class="contact__intro">
               <p class="eyebrow">Contact</p>
-              <h2 id="contact-heading">Begin with a conversation.</h2>
+              <h2 id="contact-heading">Get in touch.</h2>
               <p class="section__lede">
                 Share a brief outline of your matter. We will respond to arrange a
                 consultation at the Parktown West office or by appointment.
               </p>
-              <figure class="contact__figure">
-                <img
-                  src="images/contact-office.jpg"
-                  alt="Quiet library aisle lined with books and warm hanging lights"
-                  width="1600"
-                  height="1479"
-                  loading="lazy"
-                />
-              </figure>
+
               <ul class="contact__details">
                 <li>
-                  <span>Phone</span>
-                  <a href="tel:+27767264503">076 726 4503</a>
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M6 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 6a2 2 0 012-2z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span>Phone</span>
+                    <a href="tel:+27767264503">076 726 4503</a>
+                  </div>
                 </li>
                 <li>
-                  <span>Email</span>
-                  <a href="mailto:xolanie2@gmail.com">xolanie2@gmail.com</a>
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <path d="M3 7l9 7 9-7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span>Email</span>
+                    <a href="mailto:xolanie2@gmail.com">xolanie2@gmail.com</a>
+                  </div>
                 </li>
                 <li>
-                  <span>Physical address</span>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&amp;query=2+Gale+Road+Parktown+West+Johannesburg+2193"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    2 Gale Road, Parktown West, Johannesburg, 2193, Gauteng
-                  </a>
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" />
+                      <circle cx="12" cy="10" r="2.5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span>Physical address</span>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=2+Gale+Road+Parktown+West+Johannesburg+2193"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      2 Gale Road, Parktown West, Johannesburg, 2193
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <span>Postal address</span>
-                  <span class="contact__plain">Magelevendze House, Johannesburg, 2193</span>
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M4 6h16v14H4z" />
+                      <path d="M8 6V4h8v2M8 12h8M8 16h5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span>Postal address</span>
+                    <span class="contact__plain">Magelevendze House, Johannesburg, 2193</span>
+                  </div>
                 </li>
               </ul>
+
+              <div class="contact__actions">
+                <a class="btn btn--soft" href="tel:+27767264503">Call</a>
+                <a
+                  class="btn btn--soft"
+                  href="https://wa.me/27767264503"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  WhatsApp
+                </a>
+                <a
+                  class="btn btn--soft"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=2+Gale+Road+Parktown+West+Johannesburg+2193"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Get directions
+                </a>
+              </div>
             </div>
 
             <form class="contact-form" id="contact-form" novalidate>
@@ -337,10 +412,11 @@
       <footer class="site-footer">
         <div class="footer-inner">
           <p class="footer-brand">Xolani Lekoma Attorneys</p>
-          <p class="footer-meta">
-            &copy; <span id="year"></span> · Law firm in Johannesburg, Gauteng, South Africa
-          </p>
+          <p class="footer-meta">Johannesburg, Gauteng, South Africa</p>
         </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Xolani Lekoma Attorneys
+        </p>
       </footer>
     </div>
 

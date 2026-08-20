@@ -14,7 +14,7 @@ any static web host.
 index.html          # The page markup and content
 css/styles.css      # Styles
 js/main.js          # Nav, scroll effects, areas-of-law list, contact form
-images/             # Hero and section photography
+images/             # Hero and about portraits
 favicon.svg         # Site icon
 .nojekyll           # Tell GitHub Pages to serve files as-is
 .github/workflows/  # GitHub Pages deployment workflow
