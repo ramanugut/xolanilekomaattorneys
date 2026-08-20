@@ -78,47 +78,120 @@
             />
           </div>
           <div class="hero__veil" aria-hidden="true"></div>
-          <div class="hero__content">
-            <p class="hero__eyebrow">Practical advice. Purposeful outcomes.</p>
-            <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
-            <h1 class="hero__headline">Clear counsel for life&apos;s decisive moments.</h1>
-            <p class="hero__lede">
-              Property law, divorce, and deceased estates — handled with precision
-              in Johannesburg, Gauteng.
-            </p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#contact">Request consultation</a>
-              <a class="btn btn--ghost" href="#practice">View practice areas</a>
+          <div class="hero__inner">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Practical advice · Purposeful outcomes</p>
+              <p id="hero-brand" class="hero__brand">Xolani Lekoma Attorneys</p>
+              <h1 class="hero__headline">Clear counsel for life&apos;s decisive moments.</h1>
+              <p class="hero__lede">
+                Property law, divorce &amp; family matters, and deceased estates — handled with
+                precision, dignity, and care in Johannesburg, Gauteng.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#contact">Request consultation</a>
+                <a class="btn btn--ghost" href="#practice">View practice areas</a>
+              </div>
+              <ul class="hero__trust">
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  </span>
+                  <span>Contingency fee agreements welcome</span>
+                </li>
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <rect x="2.5" y="5" width="19" height="14" rx="2" />
+                      <path d="M2.5 10h19" />
+                    </svg>
+                  </span>
+                  <span>Credit cards accepted</span>
+                </li>
+                <li>
+                  <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+                    </svg>
+                  </span>
+                  <span>English</span>
+                </li>
+              </ul>
             </div>
-            <ul class="hero__trust">
-              <li>
-                <span class="icon-badge" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z" />
-                    <path d="M9 12l2 2 4-4" />
-                  </svg>
-                </span>
-                Contingency fees welcome
-              </li>
-              <li>
-                <span class="icon-badge" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <rect x="2.5" y="5" width="19" height="14" rx="2" />
-                    <path d="M2.5 10h19" />
-                  </svg>
-                </span>
-                Credit cards accepted
-              </li>
-              <li>
-                <span class="icon-badge" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
-                  </svg>
-                </span>
-                English
-              </li>
-            </ul>
+
+            <aside class="hero__callback" aria-labelledby="callback-heading">
+              <div class="callback-card">
+                <div class="callback-card__header">
+                  <span class="callback-card__badge">Direct Response</span>
+                  <h2 id="callback-heading">Request a Call Back</h2>
+                  <p>Leave your number. Counsel will reach out within business hours.</p>
+                </div>
+                <form class="callback-form" id="callback-form" novalidate>
+                  <div class="form-field">
+                    <label for="cb-name">Your name</label>
+                    <input id="cb-name" name="name" type="text" autocomplete="name" placeholder="Full name" required />
+                    <p class="form-error" data-error-for="cb-name"></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="cb-phone">Phone number</label>
+                    <input id="cb-phone" name="phone" type="tel" autocomplete="tel" placeholder="076 000 0000" required />
+                    <p class="form-error" data-error-for="cb-phone"></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="cb-matter">Matter type</label>
+                    <select id="cb-matter" name="matter" required>
+                      <option value="">Select legal matter</option>
+                      <option value="Property Law">Property Law</option>
+                      <option value="Divorce & Family">Divorce &amp; Family</option>
+                      <option value="Deceased Estates">Deceased Estates &amp; Planning</option>
+                      <option value="Other Matter">Other Legal Inquiry</option>
+                    </select>
+                    <p class="form-error" data-error-for="cb-matter"></p>
+                  </div>
+                  <button class="btn btn--primary btn--full" type="submit">
+                    Call me back
+                    <span aria-hidden="true">→</span>
+                  </button>
+                  <p class="form-note" id="cb-note" role="status" hidden>
+                    Opening your dialer / email to connect you with the office…
+                  </p>
+                </form>
+                <div class="callback-card__footer">
+                  <span>Or call directly:</span>
+                  <a href="tel:+27767264503" class="callback-card__direct-phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                      <path d="M6 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 6a2 2 0 012-2z" />
+                    </svg>
+                    076 726 4503
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Stats & Distinction Bar -->
+        <section class="stats-bar" aria-label="Key firm figures">
+          <div class="stats-bar__inner">
+            <div class="stat-item">
+              <span class="stat-item__number" data-target="100">100%</span>
+              <span class="stat-item__label">Direct Partner Attention</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">Gauteng</span>
+              <span class="stat-item__label">High Court Admitted</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">Parktown</span>
+              <span class="stat-item__label">West, Johannesburg Office</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">4</span>
+              <span class="stat-item__label">Key Districts Serviced</span>
+            </div>
           </div>
         </section>
 
@@ -135,9 +208,8 @@
             <ul class="practice-grid">
               <li style="--i: 0">
                 <span class="practice-grid__icon" aria-hidden="true">
-                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M4 14l12-8 12 8v12H4V14z" />
-                    <path d="M12 26v-8h8v8" />
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M3 10.5l9-7 9 7v9.5a1 1 0 01-1 1h-5v-6h-6v6H4a1 1 0 01-1-1v-9.5z" />
                   </svg>
                 </span>
                 <span class="practice-grid__index">01</span>
@@ -150,10 +222,10 @@
               </li>
               <li style="--i: 1">
                 <span class="practice-grid__icon" aria-hidden="true">
-                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <circle cx="11" cy="11" r="4" />
-                    <circle cx="21" cy="11" r="4" />
-                    <path d="M4 26c1.5-4 4.5-6 7-6s5.5 2 7 6M14 26c1.5-4 4.5-6 7-6s5.5 2 7 6" />
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
                   </svg>
                 </span>
                 <span class="practice-grid__index">02</span>
@@ -166,9 +238,9 @@
               </li>
               <li style="--i: 2">
                 <span class="practice-grid__icon" aria-hidden="true">
-                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M8 6h12l4 4v16H8V6z" />
-                    <path d="M20 6v4h4M12 14h8M12 18h8M12 22h5" />
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
                   </svg>
                 </span>
                 <span class="practice-grid__index">03</span>
@@ -214,19 +286,26 @@
                 steady process, and outcomes that respect both the law and the
                 people it serves.
               </p>
+              <div class="about__accreditation">
+                <span class="badge-tag">Admitted Attorney of the High Court of South Africa</span>
+                <span class="badge-tag">Johannesburg &amp; Gauteng Jurisdiction</span>
+              </div>
             </div>
 
             <figure class="about__portrait">
-              <img
-                src="images/about-portrait.jpg"
-                alt="Xolani Lekoma, attorney in Johannesburg"
-                width="900"
-                height="1200"
-                loading="lazy"
-              />
+              <div class="about__portrait-frame">
+                <img
+                  src="images/about-portrait.jpg"
+                  alt="Xolani Lekoma, attorney in Johannesburg"
+                  width="640"
+                  height="748"
+                  loading="lazy"
+                />
+              </div>
               <figcaption>
                 <strong>Xolani Lekoma</strong>
-                <span>Attorney · Johannesburg</span>
+                <span>Founder &amp; Principal Attorney</span>
+                <small>Admitted Attorney of the High Court of South Africa</small>
               </figcaption>
             </figure>
 
@@ -235,9 +314,9 @@
               <ul class="about__notes">
                 <li>
                   <span class="about__notes-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
                       <circle cx="12" cy="12" r="9" />
-                      <path d="M12 8v4l3 2" />
+                      <path d="M12 7v5l3 3" />
                     </svg>
                   </span>
                   <div>
@@ -247,8 +326,9 @@
                 </li>
                 <li>
                   <span class="about__notes-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
                       <path d="M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z" />
+                      <path d="M9 12l2 2 4-4" />
                     </svg>
                   </span>
                   <div>
@@ -258,7 +338,7 @@
                 </li>
                 <li>
                   <span class="about__notes-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
                       <rect x="2.5" y="5" width="19" height="14" rx="2" />
                       <path d="M2.5 10h19" />
                     </svg>
@@ -270,7 +350,7 @@
                 </li>
                 <li>
                   <span class="about__notes-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
                       <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" />
                       <circle cx="12" cy="10" r="2.5" />
                     </svg>
