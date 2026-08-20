@@ -406,22 +406,49 @@ svg {
 
 /* ——— Hero ——— */
 .hero {
-  background: linear-gradient(160deg, var(--forest-deep) 0%, var(--forest) 55%, #24362c 100%);
-  color: #f4f6f4;
-  padding: 6.5rem 0 0;
-}
-
-.hero__grid {
+  position: relative;
   display: grid;
-  gap: 2.5rem;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 1.5rem;
   align-items: end;
+  min-height: min(100svh, 52rem);
+  overflow: hidden;
+  color: #f4f6f4;
+  background: var(--forest-deep);
 }
 
-.hero__copy {
-  padding: 1.5rem 0 3.5rem;
+.hero__media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  animation: hero-drift 16s ease-out both;
+}
+
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 20, 16, 0.94) 0%,
+      rgba(12, 20, 16, 0.82) 34%,
+      rgba(12, 20, 16, 0.35) 62%,
+      rgba(12, 20, 16, 0.18) 100%
+    ),
+    linear-gradient(180deg, rgba(12, 20, 16, 0.45) 0%, transparent 28%, rgba(12, 20, 16, 0.55) 100%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 7.5rem 1.5rem 4rem;
   animation: rise 0.85s ease both;
 }
 
@@ -436,6 +463,7 @@ svg {
 
 .hero__brand {
   margin-bottom: 0.85rem;
+  max-width: 12ch;
   font-family: var(--font-display);
   font-size: clamp(2.35rem, 5.5vw, 4.1rem);
   font-weight: 600;
@@ -476,6 +504,7 @@ svg {
   margin-top: 2.35rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(196, 165, 116, 0.22);
+  max-width: 40rem;
 }
 
 .hero__trust li {
@@ -487,53 +516,6 @@ svg {
   letter-spacing: 0.02em;
 }
 
-.hero__portrait {
-  margin: 0;
-  overflow: hidden;
-  background: var(--forest-deep);
-  min-height: 22rem;
-  animation: rise 0.95s ease 0.12s both;
-}
-
-.hero__portrait img {
-  width: 100%;
-  height: 100%;
-  min-height: 22rem;
-  max-height: 36rem;
-  object-fit: cover;
-  object-position: center top;
-}
-
-@media (min-width: 900px) {
-  .hero {
-    padding-top: 5.5rem;
-    min-height: min(100svh, 52rem);
-  }
-
-  .hero__grid {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: 3rem;
-    min-height: calc(min(100svh, 52rem) - 5.5rem);
-  }
-
-  .hero__copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem 0 4rem;
-  }
-
-  .hero__portrait {
-    align-self: stretch;
-    min-height: 100%;
-  }
-
-  .hero__portrait img {
-    min-height: 100%;
-    max-height: none;
-  }
-}
-
 @keyframes rise {
   from {
     opacity: 0;
@@ -542,6 +524,30 @@ svg {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    align-items: center;
+    min-height: min(100svh, 48rem);
+  }
+
+  .hero__content {
+    padding: 8rem 1.5rem 4.5rem;
+  }
+
+  .hero__image {
+    object-position: right center;
   }
 }
 
@@ -703,12 +709,23 @@ svg {
   width: min(100%, 22rem);
 }
 
-.about__portrait img {
-  width: 100%;
+.about__monogram {
+  display: grid;
+  place-items: center;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
   border: 1px solid rgba(196, 165, 116, 0.4);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(196, 165, 116, 0.16), transparent 55%),
+    linear-gradient(165deg, #16251d, #0f1a14 70%);
+}
+
+.about__monogram span {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 8vw, 5rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--brass);
+  line-height: 1;
 }
 
 .about__portrait figcaption {
@@ -987,8 +1004,8 @@ svg {
   html {
     scroll-behavior: auto;
   }
-  .hero__copy,
-  .hero__portrait,
+  .hero__content,
+  .hero__image,
   .reveal,
   .practice-grid li {
     animation: none !important;
